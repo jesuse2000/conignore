@@ -78,6 +78,7 @@
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
+    <Content Include="WebPruebaMysql.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -97,6 +98,13 @@
     </Compile>
     <Compile Include="WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPruebaMysql.aspx.cs">
+      <DependentUpon>WebPruebaMysql.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPruebaMysql.aspx.designer.cs">
+      <DependentUpon>WebPruebaMysql.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
