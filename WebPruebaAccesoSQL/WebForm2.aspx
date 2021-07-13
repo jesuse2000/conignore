@@ -11,10 +11,11 @@
         <div>
             <h2> Operaciones con la tabla TICKET</h2>
             <br />
-
+<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            <br />
             <h3>inserción</h3>
             Empleado:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:DropDownList ID="DropDownList1" runat="server" Width="435px">
+            <asp:DropDownList ID="DropDownList1" runat="server" Width="435px" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
             </asp:DropDownList>
             <br />
             ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -29,6 +30,14 @@
             <br />
             <br />
             <h3> Consultas </h3>
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Mostrar Consultas de los Ticket" />
+            <br />
+            <br />
+            <asp:GridView ID="GridView1" runat="server">
+            </asp:GridView>
+            <br />
+            <br />
+            <br />
             <br />
         </div>
     </form>
